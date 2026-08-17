@@ -1,1 +1,1 @@
-# Structured-Programming-Language-in-C-at-UIU-Spring-26
+# Structured-Programming-Language-in-C
