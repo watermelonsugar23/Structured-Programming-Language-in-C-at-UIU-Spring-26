@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void printCharacter(char ch)
+{
+    printf("Value received from main: %c", ch);
+}
+
+int main()
+{
+    char ch;
+
+    scanf("%c", &ch);
+
+    printCharacter(ch);
+
+    return 0;
+}
