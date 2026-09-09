@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void compareNumbers(int num1, int num2) {
+    if (num1 > num2) {
+        printf("%d is greater than %d\n", num1, num2);
+    } 
+    else if (num1 < num2) {
+        printf("%d is less than %d\n", num1, num2);
+    } 
+    else {
+        printf("%d is equal to %d\n", num1, num2);
+    }
+}
+
+int main() {
+    // Declaring variables to store the user inputs
+    int input1, input2;
+
+    // Prompting the user to enter two space-separated numbers (like the sample input: 5 4)
+    printf("Enter two numbers: ");
+    scanf("%d %d", &input1, &input2);
+
+    // Passing the variables to the function
+    compareNumbers(input1, input2);
+    
+    return 0;
+}
