@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+// Function to calculate and print the sum inside the function
+
+
+
+int calculate_sum(int numbers[], int count) {
+    int total = 0;
+    for (int i = 0; i < count; i++) {
+        total += numbers[i];
+    }
+    printf("Sum In Function: %d\n", total);
+    return total;
+}
+
+
+
+int main() {
+    int numbers[1000]; // Array to store input numbers
+    int count = 0;
+    int num;
+    char next_char;
+
+    // Read numbers from the console using scanf
+    // It checks if a number is read, and looks at the next character to detect the newline
+
+
+    while (scanf("%d%c", &num, &next_char) >= 1) {
+        numbers[count++] = num;
+        
+        // Break the loop if we hit the end of the input line
+        if (next_char == '\n') {
+            break;
+        }
+    }
+
+    // Call the function and print the result returned to main
+
+
+    int total_sum = calculate_sum(numbers, count);
+    printf("Sum In Main: %d\n", total_sum);
+
+    return 0;
+}
