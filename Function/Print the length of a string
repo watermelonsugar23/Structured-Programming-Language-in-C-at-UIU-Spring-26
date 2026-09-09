@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Function to find the length of a string
+int find_length(char text[]) {
+    int length = 0;
+    while (text[length] != '\0') {
+        length++;
+    }
+    return length;
+}
+
+int main() {
+    char input[100]; // Array large enough to hold the user input
+
+    printf("Enter a string: ");
+    
+    // %[^\n] reads the entire line including spaces until Enter is pressed
+    scanf("%[^\n]", input); 
+
+    // Calculate and print the length
+    printf("Length: %d\n", find_length(input));
+
+    return 0;
+}
