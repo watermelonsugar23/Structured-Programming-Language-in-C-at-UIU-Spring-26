@@ -1,1 +1,1 @@
-# Structured-Programming-Language-in-C
+# Structured Programming Language c
